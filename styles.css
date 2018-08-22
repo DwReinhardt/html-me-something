@@ -47,7 +47,22 @@ p {
 }
 
 /* Mod list item bullets */
+ul:first-child  li:before {
+   content:"\2714\0020"; 
+  }
 
-ul:first-child  li:before { content:"\2714\0020"; }  /* OR */
-ul:nth-child(2) li:before { content:"\2713\0020"; }  /* OR */
-ul { list-style-type: none; }
+ul:nth-child(2) li:before {
+   content:"\2713\0020"; 
+  }
+
+ul {
+   list-style-type: none; 
+  }
+
+/* Alignment */
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
